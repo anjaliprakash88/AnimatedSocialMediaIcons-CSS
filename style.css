@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #320136;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.wrapper .button {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start; /* Adjust to make the icon visible first */
+    align-items: center;
+    transition: width 0.4s ease-in-out;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
+}
+
+.wrapper .button:hover .icon {
+    color: white;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4e04fa;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #0f96f7;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #e90e4f;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #252525;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.wrapper .button:hover span {
+    opacity: 1;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #4e04fa;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #0f96f7;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #e90e4f;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #252525;
+}
+
+.wrapper .button:nth-child(5) span {
+    color: #ff0000;
+}
